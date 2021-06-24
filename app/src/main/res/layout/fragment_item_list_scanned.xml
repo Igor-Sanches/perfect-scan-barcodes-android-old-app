@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/not_fount"
+    android:layout_width="match_parent"
+    android:background="@drawable/list_clear"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+    <LinearLayout android:orientation="vertical"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/historical_clear_list"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginTop="5dp"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/noting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <ListView
+        android:id="@+id/list2"
+        android:name="com.igordutrasanches.perfectscan.fragment.ScannedFragment"
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:layout_height="match_parent"
+        tools:context=".fragment.ScannedFragment"
+        tools:listitem="@layout/fragment_item" />
+
+</LinearLayout>

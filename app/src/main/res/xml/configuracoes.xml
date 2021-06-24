@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="@string/principal_settings">
+
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="auto_focus"
+            android:title="@string/focus_mode" />
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="continuos_mode"
+            android:title="@string/continuos_mode" />
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="invert_scan"
+            android:summary="@string/invert_summary"
+            android:title="@string/invert_mode" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/detect_settings">
+
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="play_beep"
+            android:title="@string/beep_mode" />
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="vibrate"
+            android:title="@string/vibrar_mode" />
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="locutor_result_in_view"
+            android:summary="@string/locutor_result_in_view_mode_sumarry"
+            android:title="@string/locutor_result_in_view_mode" />
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="locutor_result"
+            android:summary="@string/locutor_result_sumarry"
+            android:title="@string/locutor_result_mode" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/menu_historical">
+
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="CREATE_CODES_ENABLED"
+            android:title="@string/save_creeated_mode" />
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="SCANNED_CODES_ENABLED"
+            android:title="@string/save_scanned_mode" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/outros_setings">
+
+        <ListPreference
+            android:defaultValue="0"
+            android:entries="@array/laser_color"
+            android:entryValues="@array/laser_color_value"
+            android:key="preference_laser"
+            android:title="@string/laser_color" />
+    </PreferenceCategory>
+</PreferenceScreen>

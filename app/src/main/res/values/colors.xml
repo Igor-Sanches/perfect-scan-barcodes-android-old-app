@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ddddee</color>
+    <color name="colorPrimaryDark">#c5c5e2</color>
+    <color name="colorAccent">#222244</color>
+    <color name="colorTextHint">#424278</color>
+    <color name="sortingSelected">#910B1F</color>
+
+
+    <color name="pane">#CFCFD3</color>
+    <color name="pane2">#612C2A2A</color>
+
+
+    <color name="contents_text">#ff000000</color>
+    <color name="encode_view">#ffffffff</color>
+    <color name="possible_result_points">#c0ffbd21</color>
+    <color name="result_minor_text">#ffc0c0c0</color>
+    <color name="result_points">#c099cc00</color>
+    <color name="transparent">#00000000</color>
+    <color name="viewfinder_laser">#ffcc0000</color>
+    <color name="viewfinder_mask">#00000000</color>
+</resources>

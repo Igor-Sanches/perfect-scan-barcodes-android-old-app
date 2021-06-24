@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="?attr/colorPrimaryDark"
+    android:layout_height="match_parent">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:background="?attr/colorAccent"
+        app:titleTextColor="?attr/colorPrimaryDark"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_width="match_parent">
+        <ImageButton
+            android:onClick="onBack"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/btn_back"
+            android:tint="@color/colorPrimary"
+            android:background="@drawable/btn_back_style"
+            android:layout_gravity="center_vertical"
+            android:layout_width="38dp"
+            android:layout_height="38dp" />
+        <TextView
+            android:textColor="?attr/colorPrimary"
+            android:textSize="20dp"
+            android:layout_width="match_parent"
+            android:text="@string/app_name"
+            android:layout_height="wrap_content" />
+    </androidx.appcompat.widget.Toolbar>
+    <LinearLayout
+        android:id="@+id/about_anim_top"
+        android:layout_width="match_parent"
+        android:layout_height="155dp"
+        android:orientation="vertical"
+        android:background="?attr/colorAccent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:cropToPadding="true"
+                android:padding="5dp"
+                android:onClick="onShare"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="3dp"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/info_icon"
+                android:src="@drawable/ic_action_app" />
+            <LinearLayout android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textColor="?attr/colorPrimaryDark"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="20dp"
+                    android:layout_width="match_parent"
+                    android:text="Igor J. Dutra Sanches"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textColor="?attr/colorPrimary"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="15dp"
+                    android:layout_width="match_parent"
+                    android:id="@+id/version"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="3dp"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+                <Button
+                    android:onClick="onFacebook"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Facebook" />
+                <Button
+                    android:onClick="onWhatsapp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="WhatsApp" />
+            </LinearLayout>
+            <ImageButton
+                android:onClick="onRate"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/ic_menu_rate"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/info_icon"
+                android:layout_width="38dp"
+                android:layout_height="38dp" />
+        </LinearLayout>
+    </LinearLayout>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="-20dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/list_carview"
+        app:cardBackgroundColor="?attr/colorPrimary"
+        app:cardUseCompatPadding="true">
+        <TextView android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:text="@string/resenha"
+            android:layout_height="wrap_content" />
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:elevation="25dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="-20dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        app:cardBackgroundColor="?attr/colorPrimary"
+        app:cardUseCompatPadding="true">
+        <TextView android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_margin="7dp"
+            android:text="@string/copyright"
+            android:layout_height="wrap_content" />
+    </androidx.cardview.widget.CardView>
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:id="@+id/anim_bottom"
+        android:layout_height="match_parent"
+        app:behavior_overlapTop="32dp"
+        app:layout_behavior="android.support.design.widget.AppBarLayout$ScrollingViewBehavior">
+        <LinearLayout android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:text="@string/licenca_1"
+                android:layout_height="wrap_content"/>
+            <View android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/colorAccent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"/>
+            <Button android:text="@string/option"
+                android:textAllCaps="false"
+                android:id="@+id/opniao"
+                android:onClick="onOpiniao"
+                style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <Button android:text="@string/moreapps"
+                android:textAllCaps="false"
+                android:onClick="onMore"
+                style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <Button android:text="@string/privacy"
+                android:textAllCaps="false"
+                android:onClick="onPrivacy"
+                style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <Button android:text="Apache License 2.0"
+                android:textAllCaps="false"
+                android:onClick="onLicenca"
+                style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <Button android:text="@string/translateformy"
+                android:textAllCaps="false"
+                android:onClick="onTranslate"
+                style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <View
+                android:layout_marginBottom="10dp"
+                android:background="@color/colorAccent"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:text="@string/infOaboutappresumo"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

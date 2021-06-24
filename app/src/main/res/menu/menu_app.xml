@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/menu_play_store" app:showAsAction="always"
+        android:title="Google Play" android:icon="@drawable/ic_action_app_play"/>
+    <item android:visible="false" android:id="@+id/menu_navegador" app:showAsAction="always"
+        android:title="@string/navegador" android:icon="@drawable/ic_action_web"/>
+</menu>

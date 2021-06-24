@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:minWidth="300dp">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar android:id="@+id/toolbar_historical"
+            app:title="@string/editor_historical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:imeOptions="actionGo"
+                android:inputType="text"
+                android:maxLength="50"
+                android:id="@+id/editor_historical"
+                android:text="Qr code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <ImageButton android:layout_gravity="center"
+                android:layout_marginRight="10dp"
+                android:id="@+id/btn_clear_editor"
+                android:src="@drawable/ic_action_clear"
+                android:background="@drawable/image_oval_float"
+                android:layout_width="32dp"
+                android:layout_height="32dp" />
+        </LinearLayout>
+        <TextView android:id="@+id/error_text"
+            android:layout_marginLeft="10dp"
+            android:textColor="@android:color/holo_red_dark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <LinearLayout android:layout_gravity="right"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <Button android:text="@string/cancel_btn"
+                android:layout_width="wrap_content"
+                android:id="@+id/btn_cancel_editor"
+                android:layout_height="wrap_content" />
+            <Button android:text="@string/salvar_btn"
+                android:layout_width="wrap_content"
+                android:id="@+id/btn_save_editor"
+                android:textColor="@color/colorPrimary"
+                android:backgroundTint="@color/colorAccent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

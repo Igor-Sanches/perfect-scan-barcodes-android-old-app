@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string-array name="outros_payments">
+        <item>@string/cardbuy</item>
+        <item>@string/deposito_more</item>
+    </string-array>
+    <string-array name="store_payments">
+        <item>@string/buy1domate</item>
+        <item>@string/buy2domate</item>
+        <item>@string/buy3domate</item>
+        <item>@string/buy4domate</item>
+    </string-array>
+    <string-array name="lista_codigos">
+    <item>@string/aztec</item>
+    <item>@string/barcode</item>
+    <item>@string/code128</item>
+    <item>@string/code39</item>
+    <item>@string/code93</item>
+    <item>@string/ean_13</item>
+    <item>@string/ean_8</item>
+    <item>@string/itf</item>
+    <item>@string/pdf</item>
+    <item>@string/qr</item>
+    <item>@string/upc_e</item>
+    <item>@string/upc_a</item>
+  </string-array>
+  <string-array name="wifi_type">
+    <item>@string/wifi_open</item>
+    <item>WEP</item>
+    <item>WPA2/WPA</item>
+  </string-array>
+  <string-array name="codes_type">
+    <item>@string/phone</item>
+    <item>@string/text</item>
+    <item>WI-FI</item>
+  </string-array>
+   <string-array name="laser_color">
+    <item>@string/laser_default</item>
+    <item>@string/laser_blue_bright</item>
+    <item>@string/laser_blue_dark</item>
+    <item>@string/laser_blue_light</item>
+    <item>@string/laser_green_dark</item>
+    <item>@string/laser_green_light</item>
+    <item>@string/laser_orange_dark</item>
+    <item>@string/laser_orange_light</item>
+    <item>@string/laser_purple</item>
+    <item>@string/laser_red_dark</item>
+    <item>@string/laser_red_light</item>
+  </string-array>
+    <string-array name="laser_color_value">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+    <string-array name="lista_help">
+        <item>@string/rattings_app</item>
+        <item>@string/problem_app</item>
+        <item>@string/recurso_app</item>
+        <item>@string/bug_app</item>
+        <item>@string/translate_app</item>
+    </string-array>
+</resources>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/menu_eifi_conect" app:showAsAction="always"
+        android:title="@string/wifi_conect" android:icon="@drawable/ic_action_wifi_conect"/>
+    <item android:id="@+id/menu_add_wifi" app:showAsAction="always"
+        android:title="@string/wifi_add" android:icon="@drawable/ic_action_add_wifi"/>
+</menu>

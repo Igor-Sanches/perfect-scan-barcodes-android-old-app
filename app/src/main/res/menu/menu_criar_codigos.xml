@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--Copia o resultad-->
+    <item android:id="@+id/menu_copy" app:showAsAction="always"
+        android:title="@string/copy_code" android:icon="@drawable/ic_action_copy"/>
+
+    <!--Compartilhar com outras pessoas-->
+    <item app:showAsAction="never"
+        android:title="@string/share" android:icon="@drawable/ic_menu_share">
+        <menu>
+            <item android:id="@+id/menu_share_is_image"
+                android:icon="@drawable/ic_menu_scan_image"
+                android:title="@string/image_share"/>
+
+            <item android:id="@+id/menu_share_is_text"
+                android:icon="@drawable/ic_action_text"
+                android:title="@string/text_share"/>
+        </menu>
+    </item>
+
+    <!--Imprimir-->
+    <item app:showAsAction="never"
+        android:title="@string/printing"
+        android:id="@+id/menu_print_is_text"
+        android:icon="@drawable/ic_menu_share"/>
+
+    <!--Salvar no telefone-->
+    <item android:title="@string/saveas"
+        app:showAsAction="never">
+        <menu>
+            <item android:id="@+id/menu_save_image"
+                android:icon="@drawable/ic_menu_scan_image"
+                android:title="@string/savepng"/>
+
+            <item android:id="@+id/menu_save_txt"
+                android:icon="@drawable/ic_action_text"
+                android:title="@string/savetxt"/>
+        </menu>
+    </item>
+
+    <!--Buscar na web-->
+    <item android:id="@+id/menu_browser" app:showAsAction="never"
+        android:title="@string/web_find"/>
+
+</menu>

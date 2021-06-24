@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/menu_product" app:showAsAction="always"
+        android:title="@string/find_store" android:icon="@drawable/ic_action_store"/>
+    <item android:id="@+id/menu_google" app:showAsAction="always"
+        android:title="@string/google_produts" android:icon="@drawable/ic_action_google"/>
+</menu>

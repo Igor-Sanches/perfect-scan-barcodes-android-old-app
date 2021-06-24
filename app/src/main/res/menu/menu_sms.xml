@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/menu_send_sms" app:showAsAction="always"
+        android:title="@string/send_sms" android:icon="@drawable/ic_action_sms"/>
+    <item android:id="@+id/menu_send_mms" app:showAsAction="always"
+        android:title="@string/send_mms" android:icon="@drawable/ic_action_mms"/>
+    <item android:id="@+id/menu_add_contato_sms" app:showAsAction="always"
+        android:title="@string/add_condact" android:icon="@drawable/ic_action_add_contato"/>
+</menu>

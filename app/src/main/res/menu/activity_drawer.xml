@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/ic_menu_home"
+        android:title="@string/menu_home" />
+    <item
+        android:id="@+id/nav_scan"
+        android:icon="@drawable/ic_menu_scan"
+        android:title="@string/menu_scan" />
+    <item
+        android:id="@+id/nav_scan_image"
+        android:icon="@drawable/ic_menu_scan_image"
+        android:title="@string/menu_scan_image" />
+    <item
+        android:id="@+id/nav_maker"
+        android:icon="@drawable/ic_menu_maker"
+        android:title="@string/menu_maker" />
+    <item
+        android:id="@+id/nav_historical"
+        android:icon="@drawable/ic_menu_historical"
+        android:title="@string/menu_historical" />
+    <item
+        android:id="@+id/nav_about"
+        android:icon="@drawable/ic_menu_about"
+        android:title="@string/menu_about" />
+
+
+    <item android:title="@string/info">
+        <menu>
+            <item
+                android:id="@+id/nav_buy"
+                android:icon="@drawable/ic_action_buy"
+                android:title="@string/menu_buy" />
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="@string/menu_share" />
+            <item
+                android:id="@+id/nav_rate"
+                android:icon="@drawable/ic_menu_rate"
+                android:title="@string/menu_rate" />
+            <item
+                android:id="@+id/nav_talking"
+                android:icon="@drawable/ic_action_talking"
+                android:title="@string/talking" />
+            <item
+                android:id="@+id/nav_settings"
+                android:icon="@drawable/ic_menu_settings"
+                android:title="@string/menu_settings" />
+        </menu>
+    </item>
+
+</menu>
